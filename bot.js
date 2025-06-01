@@ -29,3 +29,8 @@ Besok ngonten lagi kita hantam kota pelan-pelan 😎`);
 });
 
 client.login(process.env.TOKEN);
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => res.send('IndoPlay Bot Aktif'));
+app.listen(3000, () => console.log('🌐 Keep-alive server nyala'));
+
